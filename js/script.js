@@ -10,12 +10,13 @@ console.log(color);
 const output =
 `
     <ul>
-    <li>Nome: ${firstName}</li>
-    <li>Cognome: ${lastName}</li>
-    <li>Colore preferito: ${color}</li>
+    <li>Nome:<strong> ${firstName}</strong></li>
+    <li>Cognome:<strong> ${lastName}</strong></li>
+    <li>Colore preferito:<strong>${color}</strong></li>
     </ul>
 
 `;
 console.log(output);
 
 document.getElementById("list").innerHTML = output;
+document.getElementById("nome-completo").innerHTML = firstName  +"  "+ lastName +"  "+ color+"22";
